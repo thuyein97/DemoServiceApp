@@ -31,6 +31,7 @@ jobs:
   BuildPush:
     runs-on: ubuntu-latest
     environment: Dev
+    needs: Login
     steps:
     - uses: actions/checkout@v4
     - name: Build and push
