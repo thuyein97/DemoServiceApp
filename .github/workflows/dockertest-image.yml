@@ -12,7 +12,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    environment: Dev
     steps:
     -
       name: Login to Docker Hub
