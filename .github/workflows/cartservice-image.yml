@@ -29,8 +29,8 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
-        context: ./src/cartservice
-        file: ./src/cartservice/Dockerfile
+        context: ./src/cartservice/src
+        file: ./src/cartservice/src/Dockerfile
         push: true
         tags: |
           thuyein97/cartservice:latest
